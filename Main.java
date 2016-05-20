@@ -12,25 +12,7 @@ public class Main {
         t = new Turtle();
         t.hideTurtle();
         t.back(100);
-        tree(128);
-    }
-    
-    
-    static void tree(double l) {
-        if(l < 3)
-            return;
-        t.fd(l);
-        Double pos = t.getPos();
-        // right branch
-        t.rt(45);
-        tree(l/2);     
-        
-        // left branch
-        t.setPos(pos);
-        t.lt(90);
-        tree(l/2);
-        
-        t.rt(45);
+        new Tree(128, t);
     }
 
 }
