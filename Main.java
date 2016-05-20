@@ -12,6 +12,7 @@ public class Main {
         t = new Turtle();
         t.hideTurtle();
         t.back(100);
+        t.setPenColor(Color.RED);
         new Tree(128, t);
     }
 
