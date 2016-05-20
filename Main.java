@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
         t = new Turtle();
         t.hideTurtle();
+        t.back(100);
         tree(128);
     }
     
